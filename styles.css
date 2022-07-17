@@ -46,7 +46,7 @@ header .logo img {
     height: 50px;
     border-radius: 100%;
     object-fit: cover;
-    border: 5px solid var(--body-color);
+    border: 5px solid ##a1a1a193;
     cursor: pointer;
 }
 
