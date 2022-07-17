@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-color:#16161a;
+    --body-color: #131010;
+    --text-color: #a6a8b8;
+    --box-color: #a1a1a193;
+    --bg-color: #fff;
+    --nav-color: #a6a8b8;
+    --button-color: #6242e2;
+}
+
+body{
+    background-color: var(--body-color);
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    animation: fadeInDown .8s;
+}
+
+ul li a {
+    color: var(--nav-color);
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ul li a:hover {
+    color: #6242e2;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid var(--body-color);
+    cursor: pointer;
+}
+
+section {
+    width: 800px;
+    height: 400px;
+    background-color: #131010;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h1 {
+    color: var(--bg-color);
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+
+section .link-container, .button-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+section .link-container label {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+section .link-container input, select {
+    background-color: #2e2f3e;
+    border-style: none;
+    border: 2px solid #2e2f3e;
+    outline: none;
+    color: #ccc;
+    width: 500px;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 2px 0;
+}
+
+section .button-container button {
+    height: 50px;
+    border-radius: 5px;
+    font-size: 30px;
+    border: none;
+    color: var(--bg-color);
+    background-color: var(--button-color);
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+section .button-container button:hover {
+    background-color: #5338bc;
+}
+
+
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--body-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+  }
